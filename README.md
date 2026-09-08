@@ -18,7 +18,10 @@ Sequence read name  Chromosome [pos base] for as many snps covered by the read, 
 
   LH00663:73:23HKV2LT4:2:2327:18086:18684	chr2L	255352	A	255359	A
 
+The first read above spans three SNPs (haplotype = RRR at snp positions 255344,	255352, and	255359).
+The second read above spans two SNPs (haplotype = AA at snp positions 255352 and	255359).
 
+The program xxx takes the 
 
 
 Set 3: Identify mis-matched families
