@@ -15,3 +15,10 @@ The "dubious_fams.txt" input is determine the application of xxx to the genomic 
 
 The program run.aymm.py creates shell scripts to run AYMM.v1.py on each suspect mother-clutch assignment identified in "dubious_fams.txt"
 
+
+Set 4: Estimate polyandry given genotype files
+The program ML4_a2_a4_onefam.py estimates polyandry in specified maternal family given two genotype input files (FILEPREFIX+".2data.txt", FILEPREFIX1+".4data.txt").
+The program ML4A2_onefam.py performs the same operation but only uses biallelic snps (FILEPREFIX+".2data.txt").
+The program ML4A4_onefam.py performs the same operation but only uses 4-allele markers (FILEPREFIX+".4data.txt").
+
+
