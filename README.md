@@ -13,6 +13,5 @@ The program AYMM.v1.py tests a clutch against a collection of alternative mother
 The "dubious_fams.txt" input is determine the application of xxx to the genomic data with the original mother-clutch assignments.
 
 
-
-
+The program run.aymm.py creates shell scripts to run AYMM.v1.py on each suspect mother-clutch assignment identified in "dubious_fams.txt"
 
