@@ -6,6 +6,11 @@ These programs apply likelihood methods to estimate polyandry from genomic data.
 
 
 
+Set2: Make mini-haplotype markers
+The program "make.snp.list.py" identifies intermediate frequency SNPs with sufficient coverage and quality from the overall vcf file.  It produces [prefix]+".snplist" for use by subsequent programs.
+The program "Determine.close.snps.py" identifies SNPs separated by less than a specified physical distance (e.g. MaxDist = 50) to be evaluated as potential components of mini-haplotype markers.
+
+
 
 
 Set 3: Identify mis-matched families
