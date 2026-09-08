@@ -25,7 +25,9 @@ The first read above spans three SNPs (haplotype = RRR at snp positions 255344,	
 The second read above spans two SNPs (haplotype = AA at snp positions 255352 and	255359).
 
 
-The program xxx takes the 
+The program "mom_two_locus.v1.py" pulls the SNPs for each SNP pair of a mini-haplotype and outputs the genomic data from the vcf file for each mother / haplotype.
+The program "mom_two_locus.v2.py" aligns the output from "mom_two_locus.v1.py" to the counts of each of the four alleles of the mini-haplotype. 
+The program "evaluate2locus_aligned.py" tests the output for consistency results from SNP level calls (from "mom_two_locus.v1.py") and four-allele counts ("mom_two_locus.v2.py") aligns the output from "mom_two_locus.v1.py". We exclude any locus where more than two of the four mini-haplotype alleles appear in any genotyped mother.  We 
 
 
 Set 3: Identify mis-matched families
