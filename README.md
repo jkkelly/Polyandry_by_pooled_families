@@ -15,6 +15,7 @@ The "hap1" output files have the form:
 Sequence read name  Chromosome [pos base] for as many snps covered by the read, e.g.
 
   LH00663:73:23HKV2LT4:2:1368:37308:29585	chr2L	255344	R	255352	R	255359	R
+
   LH00663:73:23HKV2LT4:2:2327:18086:18684	chr2L	255352	A	255359	A
 
 
