@@ -52,3 +52,8 @@ The program ML4A2_onefam.py performs the same operation but only uses biallelic 
 The program ML4A4_onefam.py performs the same operation but only uses 4-allele markers (FILEPREFIX+".4data.txt").
 
 
+Set 5: Simulated data from specified mating system and apply estimation procedure.
+
+
+
+
