@@ -50,7 +50,8 @@ Set 4: Estimate polyandry given genotype files
 The program ML4_a2_a4_onefam.py estimates polyandry in specified maternal family given two genotype input files (FILEPREFIX+".2data.txt", FILEPREFIX1+".4data.txt").
 The program ML4A2_onefam.py performs the same operation but only uses biallelic snps (FILEPREFIX+".2data.txt").
 The program ML4A4_onefam.py performs the same operation but only uses 4-allele markers (FILEPREFIX+".4data.txt").
-These programs were applied to both simulated data (programs described below as Set 5) and from the fruit fly data.  Each family is run seperately to allow parallel runs on a computing cluster. 
+These programs were applied to both simulated data (programs described below as Set 5) and from the fruit fly data.  
+Each family is run separately to allow parallel runs on a computing cluster. Parallel analyses were using runML_combined.py, with the inputs to this program being the two-allele (chosen.snps1.txt) and 4-allele (set0.4data.txt) genotyping data from the fruit fly experiment as well as the list of families (Fams_to_estimate.txt). 
 
 
 Set 5: Simulated data from specified mating system and apply estimation procedure.
