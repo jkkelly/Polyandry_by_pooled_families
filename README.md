@@ -1,8 +1,10 @@
 # Polyandry_by_pooled_families
-
-
 These programs apply likelihood methods to estimate polyandry from genomic data.
 
+Set 1: Filter the variant call file (vcf) to SNPs to be used for subsequent analyses
+The program "VCF.1_outstats" takes each autosomal chromosome and identifies SNPs that show maternal-clutch disagreements.  These are identified when a homozygous mother produces a clutch where the maternal allele is excessively rare even under the assumption that the clutch was sired by a single male that is homozygous for the alternative allele.  This probabilistic calculation is based on two user specified variables:  PostProb_threshold = 0.99, Offspring_minor_threshold = 0.01.  The user also specifies a minimum read depth to call maternal genotypes (minmd=6).
+The program "windows.py" identifies a single SNP per genomic window (windowsize = 10000 chosen for this study) based on Hardy-Weinberg congruence among all mothers, allele frequency congruence between mothers and clutches across families and lack of missing data.
+The program "make.snpdata.py" collects mother and offspring data from the chosen SNPs into the format needed for estimation. 
 
 
 
