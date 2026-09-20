@@ -2,7 +2,7 @@
 These programs apply likelihood methods to estimate polyandry from genomic data.
 
 Set 1: Filter the variant call file (vcf) to SNPs to be used for subsequent analyses
-The program "VCF.1_outstats" takes each autosomal chromosome and identifies SNPs that show maternal-clutch disagreements.  These are identified when a homozygous mother produces a clutch where the maternal allele is excessively rare even under the assumption that the clutch was sired by a single male that is homozygous for the alternative allele.  This probabilistic calculation is based on two user specified variables:  PostProb_threshold = 0.99, Offspring_minor_threshold = 0.01.  The user also specifies a minimum read depth to call maternal genotypes (minmd=6).
+The program "VCF.1_outstats.py" takes each autosomal chromosome and identifies SNPs that show maternal-clutch disagreements.  These are identified when a homozygous mother produces a clutch where the maternal allele is excessively rare even under the assumption that the clutch was sired by a single male that is homozygous for the alternative allele.  This probabilistic calculation is based on two user specified variables:  PostProb_threshold = 0.99, Offspring_minor_threshold = 0.01.  The user also specifies a minimum read depth to call maternal genotypes (minmd=6).
 The program "windows.py" identifies a single SNP per genomic window (windowsize = 10000 chosen for this study) based on Hardy-Weinberg congruence among all mothers, allele frequency congruence between mothers and clutches across families and lack of missing data.
 The program "make.snpdata.py" collects mother and offspring data from the chosen SNPs into the format needed for estimation. 
 
@@ -40,10 +40,7 @@ Set 3: Identify mis-matched families
 
 
 The program AYMM.v1.py tests a clutch against a collection of alternative mothers to determine if one the alternatives is the true genetic mother of that clutch.
-The "dubious_fams.txt" input is determine the application of xxx to the genomic data with the original mother-clutch assignments.
-
-
-The program run.aymm.py creates shell scripts to run AYMM.v1.py on each suspect mother-clutch assignment identified in "dubious_fams.txt"
+The program run.aymm.py creates shell scripts to run AYMM.v1.py on each suspect mother-clutch assignment identified in "dubious_fams.txt"  This file was created from the Drosophila data by application of "VCF.1_outstats.py" in program set 1.
 
 
 Set 4: Estimate polyandry given genotype files
